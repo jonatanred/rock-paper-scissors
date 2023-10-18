@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P";
+}
+
+/* header */
+
+header {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: dimgray;
+    color: black;
+    border-bottom: 3px solid black;
+    text-transform: uppercase;
+}
+
+/* main */
+
+main {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#btn {
+    height: 50px;
+    width: 150px;
+    background-color: dimgray;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 3px solid #2b2a2a;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #2b2a2a;
+}
+
+main .game {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.rock {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.paper {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scissors {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
