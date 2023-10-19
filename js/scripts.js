@@ -45,6 +45,8 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     }else if(playerChoose == 1 && computerChoose == 0){
         playerPoints++;
         choosenPlayer.innerHTML = "✋";
@@ -53,6 +55,8 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     }else if(playerChoose == 2 && computerChoose == 1){
         playerPoints++;
         choosenPlayer.innerHTML = "✌";
@@ -61,6 +65,8 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     }else if (computerChoose === 0 && playerChoose === 2) {
         computerPoints++;
         choosenPlayer.innerHTML = "✌";
@@ -69,6 +75,8 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     }else if(computerChoose == 1 && playerChoose == 0){
         computerPoints++;
         choosenPlayer.innerHTML = "✊";
@@ -77,6 +85,8 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     }else if(computerChoose == 2 && playerChoose == 1){
         computerPoints++;
         choosenPlayer.innerHTML = "✋";
@@ -85,6 +95,8 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     }else if (computerChoose === 0 && playerChoose === 0) {
         choosenPlayer.innerHTML = "✊";
         choosenComputer.innerHTML = "✊";
@@ -92,6 +104,8 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     }else if(computerChoose == 1 && playerChoose == 1){
         choosenPlayer.innerHTML = "✋";
         choosenComputer.innerHTML = "✋";
@@ -99,6 +113,8 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     }else if(computerChoose == 2 && playerChoose == 2){
         choosenPlayer.innerHTML = "✌";
         choosenComputer.innerHTML = "✌";
@@ -106,5 +122,7 @@ document.body.addEventListener("click", function(){
         choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
         playerPointsHTML.innerHTML = "Player: " + playerPoints;
         computerPointsHTML.innerHTML = "Computer: " + computerPoints;
+        playerChoose = -1;
+        computerChoose = -1;
     };
 });
