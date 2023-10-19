@@ -11,19 +11,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!-- Javascript-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Rock, Paper & Scissors</h1>
     </header>
     <main>
-        <h3>Play rock, paper & acissors against the computer!</h3>
+        <h3 class="text">Play rock, paper & acissors against the computer!</h3>
         <button id="btn">Play now</button>
         <div class="game">
+            <div class="choosenOption">
+                    <div class="divChoosenPlayer">
+                        <div class="choosenPlayer">❔</div>
+                        <p class="playerPointsHTML">Player: 0</p>
+                    </div>
+                    <div class="divChoosenComputer">
+                        <div class="choosenComputer">❔</div>
+                        <p class="computerPointsHTML">Computer: 0</p>
+                    </div>
+            </div>
+        <div class="chooseOption">
             <div class="rock">✊</div>
             <div class="paper">✋</div>
             <div class="scissors">✌</div>
+        </div>
+
         </div>
     </main>
 </body>

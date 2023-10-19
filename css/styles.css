@@ -48,9 +48,57 @@ main {
 }
 
 main .game {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.choosenOption {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divChoosenPlayer {
+    display: flex;
+    flex-direction: column;
+}
+
+.choosenPlayer {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divChoosenComputer {
+    display: flex;
+    flex-direction: column;
+}
+
+.choosenComputer {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseOption {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .rock {
