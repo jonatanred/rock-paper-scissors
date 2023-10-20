@@ -4,6 +4,12 @@ const scissors = document.querySelector(".scissors");
 const btn = document.querySelector("#btn");
 const text = document.querySelector(".text");
 const game = document.querySelector(".game");
+let fadeWon = document.querySelector(".fadeWon");
+let fadeLost = document.querySelector(".fadeLost");
+let modalWon = document.querySelector(".modalWon");
+let modalLost = document.querySelector(".modalLost");
+let closeModalWon = document.querySelector("#closeModalWon");
+let closeModalLost = document.querySelector("#closeModalLost");
 let choosenPlayer = document.querySelector(".choosenPlayer");
 let choosenComputer = document.querySelector(".choosenComputer");
 let playerPointsHTML = document.querySelector(".playerPointsHTML");
@@ -125,4 +131,32 @@ document.body.addEventListener("click", function(){
         playerChoose = -1;
         computerChoose = -1;
     };
+});
+
+document.body.addEventListener("click", function() {
+    if (playerPoints === 5){
+        fadeWon.style.display = "block";
+        modalWon.style.display = "flex";
+        playerPoints = 0;
+        computerPoints = 0;
+        playerPointsHTML.innerHTML = "Player: " + 0;
+        computerPointsHTML.innerHTML = "Computer: " + 0;
+    } else if (computerPoints === 5){
+        fadeLost.style.display = "block";
+        modalLost.style.display = "flex";
+        playerPoints = 0;
+        computerPoints = 0;
+        playerPointsHTML.innerHTML = "Player: " + 0;
+        computerPointsHTML.innerHTML = "Computer: " + 0;
+    }
+});
+
+closeModalWon.addEventListener("click", function() {
+    fadeWon.style.display = "none";
+    modalWon.style.display = "none";
+});
+
+closeModalLost.addEventListener("click", function() {
+    fadeLost.style.display = "none";
+    modalWon.style.display = "none";
 });

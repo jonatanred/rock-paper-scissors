@@ -20,6 +20,83 @@ header {
     text-transform: uppercase;
 }
 
+/* modals */
+
+.fadeWon {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 5;
+}
+
+.fadeLost {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 5;
+}
+
+.modalWon {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #2b2a2a;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalWonHeader {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+}
+
+.modalWonHeader .bi{
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.modalLost {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #2b2a2a;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalLostHeader {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+}
+
+.modalLostHeader .bi{
+    font-size: 34px;
+    cursor: pointer;
+}
+
+
 /* main */
 
 main {

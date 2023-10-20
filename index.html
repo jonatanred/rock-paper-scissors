@@ -6,6 +6,8 @@
     <title>Rock Paper & Scissors - Play now!</title>
     <!-- Css -->
     <link href="css/styles.css" rel="stylesheet">
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +17,26 @@
 </head>
 <body>
     <header>
-        <h1>Rock, Paper & Scissors</h1>
+        <h1>Rock Paper Scissors</h1>
     </header>
+    <div class="fadeWon">
+        <div class="modalWon">
+            <div class="modalWonHeader"><i id="closeModalWon" class="bi bi-x-circle"></i></div>
+            <div class="modalWonBody">
+                <h3>You won!</h3>
+            </div>
+        </div>
+    </div>
+    <div class="fadeLost">
+        <div class="modalLost">
+            <div class="modalLostHeader"><i id="closeModalLost" class="bi bi-x-circle"></i></div>
+            <div class="modalLostBody">
+                <h3>You Lost!</h3>
+            </div>
+        </div>
+    </div>
     <main>
-        <h3 class="text">Play rock, paper & acissors against the computer!</h3>
+        <h3 class="text">Play rock paper scissors against the computer!</h3>
         <button id="btn">Play now</button>
         <div class="game">
             <div class="choosenOption">
