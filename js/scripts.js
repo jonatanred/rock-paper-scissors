@@ -29,20 +29,22 @@ btn.addEventListener("click", function(){
 rock.addEventListener("click", function(){
     playerChoose = 0;
     computerChoose = Math.floor((Math.random() * 3) + 0);
-
+    playRound();
 });
 
 paper.addEventListener("click", function(){
     playerChoose = 1;
     computerChoose = Math.floor((Math.random() * 3) + 0);
+    playRound();
 });
 
 scissors.addEventListener("click", function(){
     playerChoose = 2;
     computerChoose = Math.floor((Math.random() * 3) + 0);
+    playRound();
 });
 
-document.body.addEventListener("click", function(){
+function playRound() {
     if (playerChoose === 0 && computerChoose === 2) {
         playerPoints++;
         choosenPlayer.innerHTML = "✊";
@@ -131,7 +133,7 @@ document.body.addEventListener("click", function(){
         playerChoose = -1;
         computerChoose = -1;
     };
-});
+};
 
 document.body.addEventListener("click", function() {
     if (playerPoints === 5){
@@ -141,6 +143,10 @@ document.body.addEventListener("click", function() {
         computerPoints = 0;
         playerPointsHTML.innerHTML = "Player: " + 0;
         computerPointsHTML.innerHTML = "Computer: " + 0;
+        choosenPlayer.innerHTML = "❔";
+        choosenComputer.innerHTML = "❔";
+        choosenPlayer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
+        choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
     } else if (computerPoints === 5){
         fadeLost.style.display = "block";
         modalLost.style.display = "flex";
@@ -148,7 +154,11 @@ document.body.addEventListener("click", function() {
         computerPoints = 0;
         playerPointsHTML.innerHTML = "Player: " + 0;
         computerPointsHTML.innerHTML = "Computer: " + 0;
-    }
+        choosenPlayer.innerHTML = "❔";
+        choosenComputer.innerHTML = "❔";
+        choosenPlayer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
+        choosenComputer.style.cssText = "height: 150px; width: 150px; color: #fff; font-size: 64px; display: flex; justify-content: center; align-items: center;";
+    };
 });
 
 closeModalWon.addEventListener("click", function() {
